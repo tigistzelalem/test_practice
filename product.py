@@ -6,4 +6,6 @@ class Product:
         self.quantity = quantity
 
     def total_cost(self):
+        if self.price < 0 or self.quantity < 0:
+            return 
         return self.price * self.quantity
